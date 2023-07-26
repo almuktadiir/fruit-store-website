@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fruit store</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- tailwind & daisy UI link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,6 +22,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'btn-fruits': '#F85559'
                     }
                 }
             }
@@ -35,8 +36,8 @@
     </style>
 </head>
 
-<body>
-    <header class="container mx-auto lg:px-8">
+<body class="">
+    <header class="container mx-auto lg:px-12">
         <nav class="navbar lg:bg-[#F85559] rounded-full mt-5 px-12">
             <div class="navbar-start hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-white text-lg">
@@ -69,8 +70,8 @@
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <img src="images/logo.png" alt="">
-                <a class="btn btn-ghost normal-case text-xl font-bold lg:text-white">Fruit Burst</a>
+                <img class="w-10" src="images/logo.png" alt="">
+                <a class="btn btn-ghost normal-case text-4xl font-bold lg:text-white">Fruit Burst</a>
             </div>
 
             <div class="navbar-end ">
@@ -81,7 +82,131 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main class="container mx-auto lg:px-12 my-10">
+        <!-- banner section -->
+        <section class="mb-40">
+            <div class="carousel w-full rounded-lg">
+                <!-- slider 1 -->
+                <div id="slide1" class="carousel-item relative w-full ">
+                    <!-- content part start-->
+                    <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+                        <div class="hero-overlay opacity-50"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="">
+                                <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                <button class="btn bg-btn-fruits border-0 text-white font-extrabold px-7 py-5">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content part end-->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle text-white bg-stone-950 border-0">❮</a>
+                        <a href="#slide2" class="btn btn-circle text-white bg-stone-950 border-0">❯</a>
+                    </div>
+                </div>
+
+                <!-- slider 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <!-- <img src="/images/banner2.png" class="w-full" /> -->
+                    <!-- content part start-->
+                    <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
+                        <div class="hero-overlay opacity-75 "></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="">
+                                <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                <button class="btn bg-btn-fruits border-0 text-white font-extrabold px-7 py-5">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content part end-->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle text-white bg-stone-950 border-0">❮</a>
+                        <a href="#slide3" class="btn btn-circle text-white bg-stone-950 border-0">❯</a>
+                    </div>
+                </div>
+
+                <!-- slider 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <!-- <img src="/images/banner3.png" class="w-full" /> -->
+                    <!-- content part start-->
+                    <div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
+                        <div class="hero-overlay opacity-50 "></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="">
+                                <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                <button class="btn bg-btn-fruits border-0 text-white font-extrabold px-7 py-5">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content part end-->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle text-white bg-stone-950 border-0">❮</a>
+                        <a href="#slide4" class="btn btn-circle text-white bg-stone-950 border-0">❯</a>
+                    </div>
+                </div>
+
+                <!-- slider 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <!-- <img src="/images/banner4.png" class="w-full" /> -->
+                    <!-- content part start-->
+                    <div class="hero min-h-screen" style="background-image: url(./images/banner4.png);">
+                        <div class="hero-overlay opacity-75 "></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="">
+                                <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                                <button class="btn bg-btn-fruits border-0 text-white font-extrabold px-7 py-5">Shop
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content part end-->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle text-white bg-stone-950 border-0">❮</a>
+                        <a href="#slide1" class="btn btn-circle text-white bg-stone-950 border-0">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- banner fruits section -->
+            <div class="relative">
+                <div
+                    class="absolute -top-4 md:-top-12 lg:-top-28 left-12 gap-4 md:left-20 lg:left-32 w-4/5 mx-auto text-center grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 py-12 rounded-lg bg-white text-xl text-[#414141]">
+                    <div class="mx-auto">
+                        <img src="images/fruit1.png" alt="">
+                        <p>Grape</p>
+                    </div>
+                    <div class="mx-auto">
+                        <img src="images/fruit2.png" alt="">
+                        <p>Orange</p>
+                    </div>
+                    <div class="mx-auto">
+                        <img src="images/fruit3.png" alt="">
+                        <p>Mango</p>
+                    </div>
+                    <div class="mx-auto">
+                        <img src="images/fruit4.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="mx-auto">
+                        <img src="images/fruit5.png" alt="">
+                        <p>Pomegranate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- deal of the day section -->
+        <section class="text-center">
+            <h3>hellu there</h3>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
