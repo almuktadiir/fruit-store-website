@@ -47,8 +47,9 @@
                     <li><a>Shop</a></li>
                     <li><a>All Fruits</a></li>
                 </ul>
-            </div>
 
+            </div>
+            <!--  -->
             <div class="navbar-center">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -59,22 +60,28 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        class="menu menu-sm dropdown-content mt-3 z-[1] mx-6 p-2 shadow bg-base-100 rounded-box w-52 bg-[#F85559]">
+                        <li class="text-white"><a>Home</a></li>
+                        <li class="text-white"><a>About Us</a></li>
+                        <li class="text-white"><a>Shop</a></li>
+                        <li class="text-white"><a>All Fruits</a></li>
+                        <!-- search bar -->
+                        <div class="">
+                            <div class="lg:hidden mr-10">
+                                <input class=" px-5 py-2 rounded-full outline-0" type="search" name="" id=""
+                                    placeholder="Search Here">
+                                <i class="fa-solid fa-magnifying-glass -ml-10 "></i>
+                            </div>
+                        </div>
                     </ul>
-                </div>
-                <img class="w-10" src="images/logo.png" alt="">
-                <a class="btn btn-ghost normal-case text-4xl font-bold lg:text-white">Fruit Burst</a>
-            </div>
 
+                </div>
+                <div class="flex">
+                    <img class="w-10" src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-4xl font-bold lg:text-white">Fruit Burst</a>
+                </div>
+            </div>
+            <!-- search bar -->
             <div class="navbar-end ">
                 <div class="lg:block hidden mr-10">
                     <input class=" px-7 py-2 rounded-full outline-0" type="search" name="" id=""
@@ -86,7 +93,7 @@
     </header>
 
     <!-- main part -->
-    <main class="container mx-auto lg:px-20 my-10">
+    <main class="container mx-auto px-7 lg:px-20 my-10">
         <!-- banner section -->
         <section class="mb-40">
             <div class="carousel w-full rounded-lg">
@@ -535,7 +542,7 @@
             <!-- three columns grid part -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12 mx-auto text-center justify-center">
                 <!-- left part -->
-                <div>
+                <div class="">
                     <div class="flex flex-col lg:flex-row gap-4 md:justify-center">
                         <div class="relative mx-auto bg-[#E7E7E7] w-10 h-10 rounded-full p-7">
                             <i class="fa-solid fa-users absolute top-1/3 left-1/3"></i>
